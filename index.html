@@ -1,15 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        hello world
-    </h1>
-    <button type="button">Click Me!</button>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>hello world</h1>
+  <input id="name" type="text" placeholder="Enter your name" />
+  <button id="button" type="button">Click Me!</button>
+
+  <script>
+    const button = document.getElementById("button");
+    button.addEventListener("click", function () {
+      const name = document.getElementById("name").value;
+      alert(`Hello ${name}!`);
+    });
+  </script>
 </body>
+
 </html>
